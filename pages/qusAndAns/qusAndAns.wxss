@@ -1,0 +1,72 @@
+.qusAndAns {
+  display: block;
+}
+
+.qusAndAns_t {
+  border: 1px solid #000;
+  display: flex;
+  bottom: 0;
+  position: fixed;
+  font-size: 40rpx;
+  width: 100%;
+  height: 80rpx;
+}
+
+.qusAndAns_input {
+  border: 1px solid #000;
+  width: 80%;
+  border-radius: 8rpx;
+  margin-top: 10rpx;
+  margin-left: 8rpx;
+  height: 50rpx;
+}
+
+.qusAndAns_tiwen {
+  white-space: nowrap;
+  width: 20%;
+  height: 50rpx;
+  background: #c0c0c0;
+  line-height: 50rpx;
+  text-align: center;
+  margin-top: 13rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+}
+
+.qusAndAns_y {
+  display: flex;
+}
+
+.qusAndAns_image {
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.qusAndAns_name {
+  width: 100rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 40rpx;
+}
+
+.qusAndAns_time {
+  display: block;
+  font-size: 25rpx;
+  color: #c0c0c0;
+  width: 80rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.qusAndAns_text {
+  width: 500rpx;
+  height: 110rpx;
+  margin-left: -75rpx;
+}

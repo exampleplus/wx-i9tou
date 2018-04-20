@@ -1,0 +1,62 @@
+<view class="projectReview">
+
+  <!--总评论数-->
+  <view class="projectReview_page">
+    <view style="height: 80rpx;">评论 </view>
+    <view style="height: 80rpx;margin-left: 20rpx;"> {{pageSize}}</view>
+  </view>
+  <view>
+    <block wx:for="{{rList}}" wx:for-index="num">
+      <view class="projectReview_main">
+
+        <!--回复按钮-->
+        <navigator class="button_onclick_range" hover-class="none" url="../replyList/replyList?id={{item.id}}&curNo={{item.curNo}}&name={{rList[num].name}}&logo={{rList[num].logo}}&date={{rList[num].date}}&desc={{rList[num].desc}}">
+          <view>
+            <button id="projectReview_button" size="mini">
+              回复
+            </button>
+          </view>
+        </navigator>
+        <view class="projectReview_user">
+
+          <!--用户头像-->
+          <image class="projectReview_img" src="https://www.ijointoo.com/i9touuat/{{item.logo}}"></image>
+          <view class="projectReview_username">
+
+            <!--用户名-->
+            <view class="projectReview_name">{{item.name}}</view>
+
+            <!--时间-->
+            <view class="projectReview_date">{{item.date}}</view>
+          </view>
+        </view>
+
+        <!--评论内容-->
+        <view class="projectReview_desc">{{item.desc}}</view>
+        <view class="projectReview_replyNum">
+
+          <!--追评人数
+        <view>{{item.replyNum}}</view>-->
+          <block wx:for="{{item.subs}}">
+            <view class="projectReview_replyNum_data">
+
+              <!--追评名字-->
+              <text style=" color: #f74a3d;font-size: 24rpx; ">{{item.userName}}</text>
+
+              <!--追评内容-->
+              <text style="color: #333; font-size:24rpx;margin-left: 10rpx; ">{{item.reqcontent}}</text>
+
+              <!--追评时间-->
+              <text style="color: #999; font-size: 18rpx;margin-left: 10rpx; ">{{item.reqTimeStrWeb}}</text>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!--<view class="projectReview_textarea">
+    <textarea  maxlength="500" auto-height fixed="true"/>
+    <button class="textarea_button">发送</button>
+  </view>-->
+</view>

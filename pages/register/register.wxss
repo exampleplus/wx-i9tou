@@ -1,0 +1,80 @@
+.re_prompt {
+  background: #f3f3f3;
+  color: #bbb;
+  font-size: 28rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding-left: 24rpx;
+}
+
+.VerCode_in {
+  color: #bbb;
+  font-size: 30rpx;
+}
+
+.VerCode {
+  height: 110rpx;
+  margin-left: 44rpx;
+  margin-right: 24rpx;
+  display: flex;
+  font-size: 30rpx;
+}
+
+.re_main {
+  background: #fff;
+}
+
+.inp {
+  width: 75%;
+  line-height: 110rpx;
+  height: 110rpx;
+}
+
+.Ver {
+  color: #f74a3d;
+  margin-top: 50rpx;
+}
+
+.VerCode image {
+  width: 120rpx;
+  height: 50rpx;
+  margin-top: 27rpx;
+  margin-left: 20rpx;
+}
+
+.line {
+  height: 1rpx;
+  background: #f3f3f3;
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+
+.button {
+  background: #f74a3d;
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+  margin-top: 30rpx;
+}
+
+.chGroup {
+  margin-left: 24rpx;
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.value {
+  color: #bbb;
+  font-size: 20rpx;
+  margin-top: 20rpx;
+}
+
+.te {
+  color: #f74a3d;
+  font-size: 20rpx;
+}
+
+.label {
+  color: #bbb;
+  font-size: 20rpx;
+  display: flex;
+}

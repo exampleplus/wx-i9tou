@@ -1,0 +1,46 @@
+/*每个模块样式*/
+
+.main {
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding-top: 30rpx;
+}
+
+/*标题样式*/
+
+.finTitle {
+ 
+  color: #333;
+  font-size: 32rpx;
+  margin-left: 24rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*图片样式*/
+
+.finImg {
+  margin-top: 10rpx;
+  width: 250rpx;
+  height: 100rpx;
+  margin-left: 24rpx;
+}
+
+/*融资金额*/
+
+.finAmt {
+  margin-left: 20rpx;
+  margin-top: 80rpx;
+  color: #666;
+  font-size: 28rpx;
+  display: flex;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+/*底部*/
+
+.foot {
+  height: 30rpx;
+}

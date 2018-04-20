@@ -1,0 +1,20 @@
+<view>
+  <view>
+    当前财富账面总值
+  </view>
+  <view>
+    {{}}
+  </view>
+  <view>
+    当前本金：
+  </view>
+  <view>
+    {{realAmt}}
+  </view>
+  <view>
+    当前财富账面总值
+  </view>
+  <view>
+    {{}}
+  </view>
+</view>

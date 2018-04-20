@@ -1,0 +1,60 @@
+.login_im {
+  height: 400rpx;
+  text-align: center;
+}
+
+.login_im image {
+  width: 376rpx;
+  height: 170rpx;
+  margin-top: 120rpx;
+}
+
+.login_text {
+  border: 1rpx solid #f74a3d;
+  height: 75rpx;
+  margin: 15rpx;
+  border-radius: 15rpx;
+}
+
+.login_te {
+  color: #bbb;
+  font-size: 30rpx;
+}
+
+.prompt {
+  color: #bbb;
+  font-size: 32rpx;
+  margin-left: 15rpx;
+  margin-top: 15rpx;
+}
+
+.login_button {
+  width: 725rpx;
+  height: 75rpx;
+  margin-left: 15rp;
+  margin-right: 15rpx;
+  margin-top: 15rpx;
+  background: #f74a3c;
+}
+
+.chGroup {
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+}
+
+.label {
+  color: #bbb;
+  font-size: 20rpx;
+  display: flex;
+}
+
+.checkbox {
+}
+
+.te {
+  color: #f74a3d;
+}
+
+.value {
+  margin-top: 20rpx;
+}

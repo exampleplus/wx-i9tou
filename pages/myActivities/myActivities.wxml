@@ -1,0 +1,72 @@
+<view>
+
+  <!--头部导航栏-->
+  <radio-group style="width:{{windowWidth}}px" class="radio-group" bindchange="radioChange">
+    <label class="label" wx:for="{{items}}" style="width:{{halfWidth}}px">
+      <view class="label_item {{item.checked?'checked':''}}" style="width:{{halfWidth}}px">
+        <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+      </view>
+    </label>
+  </radio-group>
+
+  <!--认筹活动-->
+  <view hidden="{{!items[0].checked}}">
+    <block wx:for="{{raiseAct}}">
+      <view class="t_layout">
+
+        <!--活动标题-->
+        <view class="actName">
+          {{item.actName}}
+        </view>
+        <view class="r_layout">
+          <view>
+            <image class="finImg" src="https://www.ijointoo.com/i9touuat/{{item.actLogo}}"></image>
+          </view>
+          <view class="support">
+            我支持了：
+            <view style="color: #f74a3d;">
+              {{item.payAmt}}
+            </view>
+          </view>
+
+          <!--是否支付 暂时未实现支付-->
+          <view class="pay {{item.payFlg=='立即支付'?'now_pay':''}}">{{item.payFlg}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!--其他活动-->
+  <view hidden="{{!items[1].checked}}">
+    <block wx:for="{{otherAct}}">
+      <view class="t_layout">
+
+        <!--活动标题-->
+        <view class="actName">
+          {{item.actName}}
+        </view>
+        <view class="r_layout">
+          <view>
+            <image class="finImg" src="https://www.ijointoo.com/i9touuat/{{item.actLogo}}"></image>
+          </view>
+          <view class="support">
+            我支持了：
+            <view style="color: #f74a3d;">
+              {{item.payAmt}}
+            </view>
+          </view>
+
+          <!--是否支付 暂时未实现支付-->
+          <view class="pay {{item.payFlg=='立即支付'?'now_pay':''}}">{{item.payFlg}}</view>
+        </view>
+
+        <!--缺少项目说明-->
+        <view>
+
+          <!--缺少项目时间-->
+          {{item.payTime}}
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+
+<!--pages/qusAndAns/qusAndAns.wxml-->
+<view class="qusAndAns">
+  <view class="qusAndAns_y">
+    <image class="qusAndAns_image" src="../../images/image/play.png"></image>
+    <text class="qusAndAns_name">aaa</text>
+    <view class="qusAndAns">
+      <text class="qusAndAns_time">bbb</text>
+      <view class="qusAndAns_text">ccc</view>
+    </view>
+  </view>
+  <view class="qusAndAns_t">
+    <input class="qusAndAns_input" placeholder="请输入问题" type="text" />
+    <text class="qusAndAns_tiwen">提问</text>
+  </view>
+</view>

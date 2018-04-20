@@ -1,0 +1,95 @@
+<view>
+  <view class="my_user">
+    <image src="https://www.ijointoo.com/i9touuat/{{logo}}" mode="scaleToFill" />
+    <view class="aijitou">爱就投</view>
+    <view class="me_level">
+      <text>会员等级: </text>
+      <text>{{usrLevel}}</text>
+    </view>
+    <view class="v_row">
+      <view class="v_column">
+        <view>{{focusNum}}</view>
+        <view>关注</view>
+      </view>
+      <view class="v_column">
+        <view>{{fansNum}}</view>
+        <view>粉丝</view>
+      </view>
+      <view class="v_column" style="border-right:0rpx;">
+        <view>0</view>
+        <view>投劵</view>
+      </view>
+    </view>
+    <view>
+
+      <!--实名认证标记：需要进行图片判断-->
+      <image class="aut_image" src="{{authFlg}}"></image>
+    </view>
+  </view>
+
+  <!--当前财富总数-->
+
+  <!--../myWealth/myWealth?uid={{uid}}-->
+  <navigator class="nav_money"  style="margin-top: 20rpx;" url="">
+    <image class="select_wordes_image" style="margin-top: 40rpx; " src="../../images/image/gold.png"></image>
+    <view style="margin-left:20rpx;">
+      <view>
+        <text>当前财富总值：{{rInvestAmt+rGrowAmt}}</text>
+        <image class="show_image" src="../../images/image/show.png"></image>
+      </view>
+      <view class="user_money">
+        <text>本金: </text>
+        <text>{{rInvestAmt}},</text>
+        <text>增长了: </text>
+        <text>{{rGrowAmt}}</text>
+      </view>
+    </view>
+    <image class="arrowright_image"   style="margin-top: 40rpx;" src="../../images/image/arrowright.png"></image>
+  </navigator>
+  <view style="height: 30rpx; background: #f3f3f3;"></view>
+  <navigator class="nav_money" style="height: 88rpx;" url="../myProject/myProject?uid={{uid}}">
+    <image class="select_wordes_image" src="../../images/image/project.png"></image>
+    <text class="select_wordes">我的项目</text>
+    <image class="arrowright_image" src="../../images/image/arrowright.png"></image>
+  </navigator>
+  <navigator class="nav_money" style="height: 88rpx;" url="../myActivities/myActivities?uid={{uid}}">
+    <image class="select_wordes_image" src="../../images/image/activity.png"></image>
+    <text class="select_wordes">我的活动</text>
+    <image class="arrowright_image" src="../../images/image/arrowright.png"></image>
+  </navigator>
+
+  <!--../postInvestmentReport/postInvestmentReport?uid={{uid}}-->
+  <navigator class="nav_money" style="height: 88rpx;" url="">
+    <image class="select_wordes_image" src="../../images/image/presentation.png"></image>
+    <text class="select_wordes">投后报告</text>
+    <image class="arrowright_image" src="../../images/image/arrowright.png"></image>
+  </navigator>
+  <view style="height: 30rpx; background: #f3f3f3;"></view>
+
+  <!--../serNumber/serNumber?uid={{uid}}-->
+  <navigator class="nav_money" style="height: 88rpx;" url="">
+    <image class="select_wordes_image" src="../../images/image/serviceNum.png"></image>
+    <text class="select_wordes">服务号</text>
+    <image class=" arrowright_image " src="../../images/image/arrowright.png "></image>
+  </navigator>
+
+  <!--../redBonus/redBonus?uid={{uid}} -->
+  <navigator class="nav_money" style="height: 88rpx;" url="">
+    <image class="select_wordes_image" src="../../images/image/redPack.png"></image>
+    <text class="select_wordes">红包奖励</text>
+    <image class=" arrowright_image " src="../../images/image/arrowright.png "></image>
+  </navigator>
+
+  <!--../messageCenter/messageCenter?uid={{uid}}-->
+  <navigator class="nav_money" style="height: 88rpx;" url="">
+    <image class="select_wordes_image" src="../../images/image/news.png"></image>
+    <text class="select_wordes">消息中心</text>
+    <image class=" arrowright_image " src="../../images/image/arrowright.png "></image>
+  </navigator>
+  <navigator class="nav_money" style="height: 88rpx;" url="../followPrj/followPrj?uid={{uid}} ">
+    <image class="select_wordes_image" src="../../images/image/follow.png"></image>
+    <text class="select_wordes">我关注的项目</text>
+    <image class="arrowright_image " src="../../images/image/arrowright.png "></image>
+  </navigator>
+  <view style="height: 30rpx; background: #f3f3f3;"></view>
+</view>

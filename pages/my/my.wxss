@@ -1,0 +1,100 @@
+.my_user {
+  background: url(images/image/banner.png);
+  height: 444rpx;
+  text-align: center;
+}
+
+.my_user image {
+  border-radius: 50%;
+  margin-top: 84rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.aijitou {
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.me_level {
+  color: #fff;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+
+/*关注、粉丝、投劵的选项*/
+
+.v_row {
+  flex-direction: row;
+  display: flex;
+  color: #fff;
+  font-size: 30rpx;
+  margin-top: 45rpx;
+  width: 99%;
+  padding-bottom: 30rpx;
+}
+
+.v_column {
+  width: 33%;
+  border-right: 1rpx solid #fff;
+  height: 80rpx;
+}
+
+.aut_image {
+  position: absolute;
+  right: 100rpx;
+  top: 99rpx;
+}
+
+/*财富选项样式*/
+
+.nav_money {
+  height: 124rpx;
+  background: #fff;
+  display: flex;
+  color: #333;
+  font-size: 30rpx;
+  border-bottom: 1rpx solid #f3f3f3;
+}
+
+/*选项图标*/
+
+.select_wordes_image {
+  height: 35rpx;
+  width: 35rpx;
+  margin-left: 24rpx;
+  margin-top: 28rpx;
+}
+
+.all_money {
+}
+
+.show_image {
+  margin-left: 30rpx;
+  height: 20rpx;
+  width: 40rpx;
+  margin-top: 30rpx;
+}
+
+.user_money {
+  color: #666;
+  font-size: 28rpx;
+}
+
+/*箭头图标样式*/
+
+.arrowright_image {
+  position: absolute;
+  right: 10rpx;
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: 28rpx;
+}
+
+/*选项文字样式*/
+
+.select_wordes {
+  padding-left: 20rpx;
+  line-height: 88rpx;
+}

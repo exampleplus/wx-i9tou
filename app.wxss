@@ -1,0 +1,6 @@
+/*一条直线*/
+.line{
+  background: #f3f3f3;
+  height: 1rpx;
+  width: 100%;
+}

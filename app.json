@@ -1,0 +1,69 @@
+{
+ 
+  "pages": [ 
+    "pages/project/project",
+    "pages/information/information",
+    "pages/projectDetails/projectDetails",
+    "pages/informationDetails/informationDetails",
+    "pages/footprint/footprint",
+    "pages/showProjectDetails/showProjectDetails",
+    "pages/qusAndAns/qusAndAns",
+    "pages/support/support",
+    "pages/supportDetails/supportDetails",
+    "pages/BPView/BPView",
+    "pages/projectReview/projectReview",
+    "pages/feedbackRecord/feedbackRecord",
+    "pages/investmentHelp/investmentHelp",
+    "pages/my/my",
+    "pages/replyList/replyList",
+    "pages/login/login",
+    "pages/loginPhoVer/loginPhoVer",
+    "pages/register/register",
+    "pages/myProject/myProject",
+    "pages/myWealth/myWealth",
+    "pages/myActivities/myActivities",
+    "pages/postInvestmentReport/postInvestmentReport",
+    "pages/redBonus/redBonus",
+    "pages/messageCenter/messageCenter",
+    "pages/followPrj/followPrj",
+    "pages/serNumber/serNumber"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱就投微信小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#f74a3d",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/project/project",
+        "iconPath": "images/log/project1.png",
+        "selectedIconPath": "images/log/project.png",
+        "text": "爱投资"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "iconPath": "images/log/noInformation.png",
+        "selectedIconPath": "images/log/information.png",
+        "text": "咨讯"
+      },
+      {
+        "pagePath": "pages/support/support",
+        "iconPath": "images/log/noFIndustry.png",
+        "selectedIconPath": "images/log/FIndustry.png",
+        "text": "爱助创"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/log/nomy.png",
+        "selectedIconPath": "images/log/my.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

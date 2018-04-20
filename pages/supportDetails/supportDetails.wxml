@@ -1,0 +1,167 @@
+<view class="supportDetails">
+  <view class="supp">
+    <view class="supportDetails_iRank">
+      <view>TOP</view>
+      <view>{{iRank}}</view>
+    </view>
+
+    <!--判断是否有视频如果没有就显示图片-->
+    <view wx:if="{{vUrl==null}}">
+      <view class="s">
+        <image class="pre_image" src="https://www.ijointoo.com/i9touuat/{{image}}"></image>
+      </view>
+    </view>
+    <view wx:else>
+      <video src="{{vUrl}}" class="video"></video>
+    </view>
+
+    <!--标题-->
+    <view class="title">{{pName}}</view>
+    <view class="view_pre_type">
+
+      <!--投资类型-->
+      <view class="pre_type">
+        <view class="supportDetails_industry">{{industry}}</view>
+        <view class="supportDetails_fStage">{{fStage}}</view>
+      </view>
+    </view>
+    <view class="supportDetails_yidasan">
+      <image class="supportDetails_image" src="../../images/image/no_awarded.png" />
+      <text class="supportDetails_yds">已打赏: </text>
+      <text class="supportDetails_fAmt">￥{{fAmt}}</text>
+    </view>
+    <progress class="progress" percent="{{fAmt}}" strokeWidth="15" color="#FD7B66" active />
+    <view class="supportDetails_dsmb">
+      <text class="supportDetails_tA ">打赏目标: </text>
+      <text class="supportDetails_tA tAmt">￥{{tAmt}}</text>
+      <image class="supportDetails_image_t" src="../../images/image/have_awarded.png" />
+    </view>
+    <view class="supportDetails_row">
+      <view class="supportDetails_row_item">
+        <view class="supportDetails_row_t">
+          {{tAmt}}
+        </view>
+        <view class="supportDetails_row_text">打赏目标</view>
+      </view>
+      <view class="supportDetails_row_item">
+        <view class="supportDetails_row_t">
+          {{fAmt}}
+        </view>
+        <view class="supportDetails_row_text">成功打赏</view>
+      </view>
+      <view class="supportDetails_row_item">
+        <view class="supportDetails_row_t">
+          {{goodNum}}
+        </view>
+        <view class="supportDetails_row_text">竞标人数</view>
+      </view>
+    </view>
+  </view>
+
+  <!--数据需要处理-->
+  <view class="supportDetails_pTag">
+    <block wx:for="{{pTag}}">
+      <view class="supportDetails_pTag_itme">
+        {{item}}
+      </view>
+    </block>
+  </view>
+
+  <!--单选框-->
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label wx:for="{{items}}">
+      <view class="label {{item.checked?'checked':''}}">
+        <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </view>
+    </label>
+  </radio-group>
+
+  <!--创业故事-->
+  <block wx:for="{{featureList}}">
+    <view hidden="{{!items[0].checked}}" class="item_one">
+      <view>
+
+        <!-- -->
+        <image style="width:{{windowWidth-24}}px;" src="https://www.ijointoo.com/i9touuat/{{item.imgUrl}}"></image>
+      </view>
+      <view class="supportDetails_cs">
+        {{item.title}}
+      </view>
+      <view class="supportDetails_desc">
+        {{item.desc}}
+      </view>
+    </view>
+  </block>
+
+  <!--助创目标-->
+  <view hidden="{{!items[1].checked}}" class="item_two">
+    <view style="color:#666; font-size:30rpx;padding-left:10rpx;">
+      任务要求:
+    </view>
+    <view style="color:#333; font-size:30rpx;padding-left:10rpx;padding-top:6rpx;">
+      {{priceName}}
+    </view>
+  </view>
+  <view hidden="{{!items[1].checked}}" class="words">
+    {{cfDesc}}
+  </view>
+
+  <!--助创回报-->
+  <view hidden="{{!items[2].checked}}" class="item_three">
+    <view style="padding-left:15px;">
+      支持回报:
+    </view>
+    <view style="padding-left:10rpx; color: #333;">
+      {{rtnNum}}
+    </view>
+  </view>
+  <view hidden="{{!items[2].checked}}" style="color:#666; font-size:30rpx;padding-left:12px;background: #fff; padding-top: 15rpx;">
+    {{rigDesc}}
+  </view>
+  <view hidden="{{items[0].checked}}" class="select_words" style="margin-top:30rpx;">
+    <view style="color:#666; font-size:30rpx;padding-left:12px;padding-top: 15rpx;">缺乏资源:</view>
+    <view style="color:#333; font-size:30rpx;padding-left:5px;height:40px;padding-top: 20rpx;">{{rscDesc}}</view>
+  </view>
+  <view hidden="{{!items[0].checked}}" class="select_words">
+    <view style="color:#666; font-size:30rpx;padding-left:12px; padding-top: 15rpx;">投资行家:</view>
+    <view style="color:#333; font-size:30rpx;padding-left:5px;height:40px;padding-top: 20rpx; ">接口未做</view>
+  </view>
+  <navigator url="../BPView/BPView?bpUrl={{bpUrl}} ">
+    <view hidden="{{!items[0].checked}}" class="select_words" style="margin-top:30rpx;">
+      <view style="color:#666; font-size:30rpx;padding-left:12px; padding-top: 15rpx;">BP查看</view>
+      <image src="../../images/image/arrowright.png"></image>
+    </view>
+  </navigator>
+  <navigator url="../projectReview/projectReview?ppCode={{ppCode}}">
+    <view hidden="{{!items[0].checked}}" class="select_words">
+      <view style="color:#666; font-size:30rpx;padding-left:12px; padding-top: 15rpx;">项目评论</view>
+      <view style="position: absolute; right: 60rpx;padding-top:15rpx;">{{replyNum}}</view>
+      <image src="../../images/image/arrowright.png"></image>
+    </view>
+  </navigator>
+
+  <!--../feedbackRecord/feedbackRecord-->
+  <navigator url="">
+    <view hidden="{{!items[0].checked}}" class="select_words">
+      <view style="color:#666; font-size:30rpx;padding-left:12px; padding-top: 15rpx;">反馈记录</view>
+      <view style="position: absolute; right: 60rpx;padding-top:15rpx;">{{fBackNum}}</view>
+      <image src="../../images/image/arrowright.png"></image>
+    </view>
+  </navigator>
+  <view class="foot">
+    <view id="foot_words">《助创者须知》</view>
+  </view>
+
+  <!--该按钮业务逻辑未写-->
+
+  <!--<view class="supportDetails_zzc">
+    <view class="supportDetails_zzc_item">
+      <image class="supportDetails_zzc_image" src="../../images/image/nogood.png"></image>
+      <view class="supportDetails_button">赞{{goodNum}}</view>
+    </view>
+    <view class="supportDetails_zzc_item">
+      <image class="supportDetails_zzc_image" src="../../images/image/nomoney.png"></image>
+      <view class="supportDetails_button">助创</view>
+    </view>
+  </view>-->
+</view>

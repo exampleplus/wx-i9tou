@@ -1,0 +1,42 @@
+<view calss="information">
+  <view class="information_head">
+
+    <!--头部导航栏-->
+    <radio-group style="width:{{windowWidth}}px" class="radio-group" bindchange="radioChange">
+      <label class="label" wx:for="{{radiolist}}" style="width:{{halfWidth}}px">
+        <view class="label_item {{item.open?'checked':''}}" style="width:{{halfWidth}}px">
+          <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+        </view>
+      </label>
+    </radio-group>
+  </view>
+  <view class="information_body">
+    <block wx:for="{{infolist}}" wx:key="key">
+    <!--../informationDetails/informationDetails?webUrl={{item.webUrl}} -->
+      <navigator class="information_b" url="" open-type="navigate">
+        <view class="information_image">
+          <image src="https://www.ijointoo.com/i9touuat{{item.smallLogoUrl}}" mode="scaleToFill" />
+        </view>
+        <view class="data">
+          <view class="information_title">{{item.title}}</view>
+          <view class="information_text">{{item.summary}}</view>
+          <view class="information_time">{{item.putonTime}}</view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+
+  <!--
+   <view class="loadmore" bindtap="loadmore">
+    加载更多
+  </view>
+  <view class="body-view">
+    <loading hidden="{{hidden}}">
+      加载中...
+    </loading>
+  </view>
+  <modal class="modal" hidden="{{modhidden}}" no-cancel>
+    <view> 没有更多信息 </view>
+  </modal>
+  -->
+</view>

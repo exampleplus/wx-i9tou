@@ -1,0 +1,4 @@
+<view>
+<view>您已经领取了{{cashAmtStr}}</view>
+
+</view>

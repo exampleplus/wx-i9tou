@@ -1,0 +1,219 @@
+.projectDetails_compMe {
+  padding-bottom: 20rpx;
+}
+
+.projectDetails_compMedUri {
+  width: 100%;
+}
+
+.projectDetails_head {
+  background: #fff;
+}
+
+/*项目标题*/
+
+.projectDetails_finTitle {
+  padding-top: 30rpx;
+  display: block;
+  font-size: 32rpx;
+  color: #333;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+ 
+}
+
+.projectDetails_i {
+  margin-top: 30rpx;
+  display: flex;
+  margin-left: 50rpx;
+  font-size: 22rpx;
+}
+
+.projectDetails_image {
+  padding-top: 15rpx;
+  width: 50rpx;
+  height: 35rpx;
+}
+
+.projectDetails_yrc {
+  color: #666;
+  margin-left: 10rpx;
+}
+
+.projectDetails_investAmt {
+  color: #f74a3d;
+}
+/*进度条*/
+#progress {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 10rpx;
+  /*border-radius: 20rpx;
+  border: 1rpx solid #000;
+  background: #FD7B66;*/
+}
+
+.projectDetails_c {
+  right: 60rpx;
+  display: flex;
+  position: absolute;
+  font-size: 22rpx;
+}
+
+.projectDetails_finAmt {
+  position: relative;
+  top: 11rpx;
+  color: #f74a3d;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+}
+
+/*估值、起投金额、认筹人数 全部样式*/
+
+.projectDetails_g {
+  margin-top: 80rpx;
+  flex-direction: row;
+  display: flex;
+  height: 100rpx;
+  width: 100%;
+  font-size: 28rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.projectDetails_compAss {
+  flex-direction: column;
+  display: flex;
+  width: 35%;
+  text-align: center;
+  border-right: 1rpx solid #eee;
+}
+
+/*估值、起投金额、认筹人数 文字样式*/
+
+.head_words {
+  white-space: nowrap;
+  height: 40rpx;
+  margin-top: 10rpx;
+  text-align: center;
+  color: #666;
+}
+
+.compAss {
+  color: #f74a3d;
+}
+
+.projectDetails_button_z {
+  display: flex;
+  height: 88rpx;
+  background: #fff;
+  width: 100%;
+  border-bottom: 1rpx solid #f9f9f9;
+  font-size: 30rpx;
+}
+
+.projectDetails_image_z {
+  padding-top: 23rpx;
+  width: 28rpx;
+  height: 35rpx;
+  margin-left: 17rpx;
+}
+/*选择框文字样式*/
+.select_words{
+  color: #666;
+  margin-left: 10rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+
+}
+
+.projectDetails_button {
+  display: flex;
+  height: 80rpx;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  bottom: 0;
+  border-top: 1px solid #efefef;
+}
+
+.projectDetails_button_w {
+  width: 20%;
+  text-align: center;
+  background: #fff;
+  color: #808080;
+  font-size: 25rpx;
+  border-top: 1rpx solid #efefef;
+  border-right: 1rpx solid #efefef;
+}
+
+.noimage {
+  width: 0rpx;
+  height: 0rpx;
+}
+
+.yesimage {
+  width: 99%;
+  border: 1px solid #000;
+  margin-bottom: 40rpx;
+}
+
+.projectDetails_featureTitle {
+  margin-bottom: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.projectDetails_bottom {
+  height: 100rpx;
+}
+
+.projectDetails_button_r {
+  background: #f74b3d;
+  text-align: center;
+  font-size: 25rpx;
+  width: 40%;
+  white-space: nowrap;
+  line-height: 80rpx;
+  color: #fff;
+  border-left: 1rpx solid #f74b3d;
+  border-top: 1rpx solid #f74b3d;
+}
+
+.color_box {
+  background: #0f0;
+  margin-top: 15rpx;
+  width: 10rpx;
+  height: 45rpx;
+}
+
+.image_introduce {
+  font-size: 32rpx;
+  margin-left: 10rpx;
+  color: #333;
+  line-height: 40px;
+}
+
+.pr_b {
+  background: #fff;
+  display: block;
+}
+
+.pr {
+  background: #fff;
+  display: flex;
+  height: 40px;
+  margin-top: 20rpx;
+}
+
+.projectDetails_help {
+  display: flex;
+  background: #fff;
+  height: 44px;
+  float: right;
+  right: 10rpx;
+  width: 170rpx;
+  line-height: 44px;
+  margin-bottom: 20rpx;
+}

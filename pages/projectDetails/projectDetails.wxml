@@ -1,0 +1,98 @@
+<view class="projectDetails">
+  <view class="projectDetails_compMe">
+    <image class="projectDetails_compMedUri" src="https://www.ijointoo.com/i9touuat{{compMedUri}}" mode="scaleToFill"></image>
+  </view>
+  <view class="projectDetails_head">
+    <view class="projectDetails_finTitle">
+      <text>{{finTitle}}</text>
+    </view>
+    <view>
+      <view class="projectDetails_i">
+        <image class="projectDetails_image" src="../../images/image/no_awarded.png" />
+        <text class="projectDetails_yrc">已认筹: </text>
+        <text class="projectDetails_investAmt">￥{{investAmt}}</text>
+      </view>
+      <progress id="progress" percent="{{finPercent}}" strokeWidth="15" color="#FD7B66" active />
+      <view class="projectDetails_c">
+        <view class="projectDetails_finAmt">
+          <text style="color: #666;">筹资目标: </text>
+          <text>￥{{finAmt}}</text>
+        </view>
+        <image class="projectDetails_image" src="../../images/image/have_awarded.png" />
+      </view>
+    </view>
+
+    <!--接口不是正确的-->
+    <view class="projectDetails_g">
+      <view class="projectDetails_compAss">
+        <text class="head_words compAss">{{compAss}}</text>
+        <text class="head_words">估值</text>
+      </view>
+      <view class="projectDetails_compAss">
+        <text class="head_words compAss">{{followStartAmt}}</text>
+        <text class="head_words">起投金额</text>
+      </view>
+      <view class="projectDetails_compAss">
+        <text class="head_words compAss">{{}}??</text>
+        <text class="head_words">认筹人数</text>
+      </view>
+    </view>
+  </view>
+  <view style=" background:#fff; height: 88rpx;;">
+<!--../investmentHelp/investmentHelp-->
+    <navigator class="projectDetails_help" url="">
+      <image src="../../images/image/InvestmentHelp.png" style="width:23rpx;  height:23rpx; margin-top: 32rpx;"></image>
+      <view style="color:#33a9fc;font-size:20rpx;padding-left:7rpx;text-align: center;">投资帮助</view>
+    </navigator>
+  </view>
+
+  <!--../footprint/footprint?prjCode={{prjCode}}-->
+  <navigator url="">
+
+    <!--足迹图片-->
+    <view class="projectDetails_button_z">
+      <image class="projectDetails_image_z" src="../../images/image/footprint.png" />
+      <text class="select_words">查看项目足迹</text>
+      <image style=" padding-top: 18rpx; width: 40rpx; height: 40rpx; position: absolute;right: 10rpx" src="../../images/image/arrowright.png" />
+    </view>
+  </navigator>
+
+  <!--../showProjectDetails/showProjectDetails?prjCode={{prjCode}}-->
+  <navigator url=" ">
+    <view class="projectDetails_button_z ">
+      <image class="projectDetails_image_z " src="../../images/image/data.png "></image>
+      <text class="select_words">查看项目资料</text>
+      <image style=" padding-top: 18rpx; width: 40rpx; height: 40rpx; position: absolute;right: 10rpx " src="../../images/image/arrowright.png " />
+    </view>
+  </navigator>
+  <view class="pr">
+    <view class="color_box " />
+    <view class="image_introduce ">图文介绍</view>
+  </view>
+  <view class="pr_b ">
+    <block wx:for="{{finFeatureList}}" wx:key="key">
+      <view class="projectDetails_featureTitle ">{{item.featureTitle}}</view>
+      <view>{{item.featureDesc}}</view>
+    
+      <image class="{{item.featureImgUrl=='' ? 'noimage': 'yesimage'}}" src="https://www.ijointoo.com/i9touuat{{item.featureImgUrl}}"></image>
+    </block>
+  </view>
+
+  <!--<view class="projectDetails_button ">
+    <navigator class="projectDetails_button_w " url="../qusAndAns/qusAndAns ">
+      <image src="../../images/image/customerService.png " style="height:35rpx; width:35rpx;padding-top:5rpx; " />
+      <view> 问答 </view>
+    </navigator>
+    <navigator class="projectDetails_button_w " url="../qusAndAns/qusAndAns ">
+      <image src="../../images/image/chat.png " style="height:35rpx; width:35rpx;padding-top:5rpx; " />
+      <view>聊项目</view>
+    </navigator>
+    <navigator class="projectDetails_button_w " url="../qusAndAns/qusAndAns ">
+      <image src="../../images/image/like.png " style="height:35rpx; width:35rpx;padding-top:5rpx; " />
+      <view>喜欢</view>
+    </navigator>
+    <navigator class="projectDetails_button_r " url="../qusAndAns/qusAndAns ">
+      <view>融资完成</view>
+    </navigator>
+  </view>-->
+</view>

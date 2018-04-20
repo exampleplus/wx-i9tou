@@ -1,0 +1,4 @@
+<!--pages/informationDetails/informationDetails.wxml-->
+<text></text>
+ <text>{{url}}</text>
+<image src="image"></image>

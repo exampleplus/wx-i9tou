@@ -1,0 +1,83 @@
+<view>
+
+  <!--头部导航栏-->
+  <radio-group style="width:{{windowWidth}}px" class="radio-group" bindchange="radioChange">
+    <label class="label" wx:for="{{items}}" style="width:{{halfWidth}}px">
+      <view class="label_item {{item.checked?'checked':''}}" style="width:{{halfWidth}}px">
+        <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+      </view>
+    </label>
+  </radio-group>
+
+  <!--认筹的项目-->
+  <view hidden="{{!items[0].checked}}">
+    <block wx:for="{{fromTheProject}}">
+      <view class="main">
+
+        <!--项目主题-->
+        <view class="finTitle">
+          {{item.finTitle}}
+        </view>
+        <view style=" display: flex;">
+          <image class="finImg" image src="https://www.ijointoo.com/i9touuat{{item.finImg}}"></image>
+
+          <!--认筹金额-->
+          <view class="finAmt">
+            认筹：
+            <text style="color: #f74a3d;"> {{item.finAmt}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!--投资的项目-->
+  <view hidden="{{!items[1].checked}}">
+    <block wx:for="{{investmentProjects}}">
+      <view class="main" style="height: 232rpx;">
+
+        <!--项目主题-->
+        <view class="finTitle">
+          {{item.finTitle}}
+        </view>
+        <view class="row">
+          <image class="finImg" src="https://www.ijointoo.com/i9touuat{{item.finImg}}"></image>
+          <view class="column">
+
+            <!--本金-->
+            <view class="ri_money">
+              本金：
+              <view style="color: #f74a3d;">
+                接口暂无
+              </view>
+            </view>
+
+            <!--浮盈-->
+            <view class="ri_money">
+              浮盈：
+              <view style="color: #f74a3d;">
+                接口暂无
+              </view>
+            </view>
+
+            <!--已兑现-->
+            <view class="ri_money">
+              本金：
+              <view style="color: #f74a3d;">
+                接口暂无
+              </view>
+            </view>
+          </view>
+
+          <!--投资明细-->
+          <view class="column">
+            <text class="ri_details">投资明细</text>
+          </view>
+        </view>
+
+        <!--管家-->
+        <view class="bot_hous">管家：接口暂无</view>
+      </view>
+    </block>
+  </view>
+</view>

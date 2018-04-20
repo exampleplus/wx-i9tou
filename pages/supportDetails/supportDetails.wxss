@@ -1,0 +1,350 @@
+.s {
+  text-align: center;
+}
+
+.supportDetails_iRank {
+  width: 80rpx;
+  height: 58rpx;
+  background: #b5ccfe;
+  padding-top: 20rpx;
+  color: #fff;
+  font-size: 20rpx;
+  position: absolute;
+  right: 20rpx;
+  text-align: center;
+}
+
+.supp {
+  background: #fff;
+}
+/*项目图片*/
+.pre_image {
+  margin-top: 10rpx;
+  width: 99%;
+  margin: 0 auto;
+ 
+  border-bottom: 1rpx solid #eee;
+  border-top: 1rpx solid #eee;
+}
+/*视频样式*/
+.video{
+width: 100%;
+}
+.supportDetails_item image {
+  padding-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  height: 400rpx;
+  background: url(images/image/huiseniu.png) no-repeat center;
+  background-size: 75% 75%;
+}
+
+/*标题*/
+
+.title {
+  text-align: center;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+  color: #333;
+}
+
+/*包裹投资类型*/
+
+.view_pre_type {
+  display: flex;
+  padding-top: 15rpx;
+  text-align: center;
+}
+
+/*投资类型*/
+
+.pre_type {
+  margin: auto;
+  display: flex;
+  color: #666;
+  font-size: 26rpx;
+}
+
+.supportDetails_industry {
+  background: url(images/image/industry.png) no-repeat;
+  padding-left: 50rpx;
+  width: 60rpx;
+  margin-right: 75rpx;
+  white-space: nowrap;
+  padding-top: 15rpx;
+}
+
+.supportDetails_fStage {
+  background: url(images/image/stage.png) no-repeat;
+  padding-left: 50rpx;
+  width: 40rpx;
+  height: 40rpx;
+  padding-top: 15rpx;
+  margin-left: 75rpx;
+  white-space: nowrap;
+}
+
+/*包裹打赏view*/
+
+.supportDetails_yidasan {
+  margin-top: 30rpx;
+}
+
+.supportDetails_image {
+  margin-left: 75rpx;
+  width: 50rpx;
+  height: 40rpx;
+}
+
+/*打赏文字样式*/
+
+.supportDetails_yds {
+  width: 50rpx;
+  height: 40rpx;
+  color: #666;
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  position: relative;
+  top: -25rpx;
+}
+
+/*打赏金额样式*/
+
+.supportDetails_fAmt {
+  color: #f74a3d;
+  position: relative;
+  top: -25rpx;
+  font-size: 22rpx;
+}
+
+.progress {
+  margin: 0 auto;
+  border: 1rpx solid #000;
+  width: 90%;
+}
+
+.supportDetails_dsmb {
+  width: 300rpx;
+  float: right;
+  margin-right: 20rpx;
+  text-align: center;
+}
+
+.supportDetails_image_t {
+  width: 50rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  position: relative;
+}
+
+.supportDetails_tA {
+  position: relative;
+  top: 7rpx;
+  color: #666;
+  font-size: 22rpx;
+}
+
+.supportDetails_tA.tAmt {
+  position: relative;
+  top: 7rpx;
+  color: #f74a3d;
+  font-size: 22rpx;
+}
+
+.supportDetails_row {
+  padding-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  height: 110rpx;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.supportDetails_row_item {
+  height: 90rpx;
+  width: 33%;
+  border-right: 1px solid #eee;
+  text-align: center;
+}
+
+.supportDetails_row_t {
+  color: #fd7b66;
+}
+
+/*标签样式*/
+
+.supportDetails_pTag {
+  background: #fff;
+  text-align: center;
+  flex-flow: row wrap;
+  font-size: 24rpx;
+  color: #f74a3d;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.supportDetails_pTag_itme {
+  display: inline-block;
+  padding: 10rpx;
+  border: 3rpx solid #f74a3d;
+  border-radius: 20rpx;
+  margin-right: 15rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+/*创业故事*/
+
+.item_one {
+  background: #fff;
+  padding-bottom: 10rpx;
+  margin-top: 45rpx;
+}
+
+/*助创目标*/
+
+.item_two {
+  padding-top: 30rpx;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  white-space: nowrap;
+  margin-top: 45rpx;
+}
+
+.words {
+  display: flex;
+  color: #666;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+  background: #fff;
+  padding-top: 15rpx;
+  padding-bottom: 30rpx;
+}
+
+.item_three {
+  padding-top: 30rpx;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  white-space: nowrap;
+  margin-top: 45rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+
+/*选择按钮*/
+
+.select_words {
+  padding-top: 10rpx;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  white-space: nowrap;
+  height: 40px;
+  margin-top: 1rpx;
+}
+
+/*标签图片*/
+
+.select_words image {
+  padding-top: 15rpx;
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 10rpx;
+}
+
+.supportDetails_desc {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 20px;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.supportDetails_cs {
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+}
+
+.radio {
+  position: absolute;
+  left: -999rem;
+}
+
+.label {
+  background: #fff;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 247rpx;
+  padding-top: 30rpx;
+  height: 55rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.radio-group {
+  margin-top: 15rpx;
+  margin-left: 2rpx;
+  display: flex;
+  height: 55rpx;
+  text-align: center;
+  background: #fff;
+  font-size: 30rpx;
+}
+
+/*选择状态*/
+
+.label.checked {
+  color: #f74a3d;
+  border-bottom: 2px solid #f74a3d;
+}
+
+.supportDetails_zzc {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  color: #808080;
+  font-size: 28rpx;
+  background: #fff;
+  margin-top: 45rpx;
+}
+
+.supportDetails_zzc_item {
+  display: flex;
+  border-right: 1rpx solid #c0c0c0;
+  width: 50%;
+}
+
+.supportDetails_zzc_image {
+  padding-left: 30%;
+  padding-top: 8px;
+  width: 30px;
+  height: 30px;
+  line-height: 50px;
+}
+
+.supportDetails_button {
+  line-height: 50px;
+  height: 50px;
+  background: #fff;
+}
+
+/*助创须知*/
+
+#foot_words {
+  color: #f74a3d;
+  font-size: 30rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  height: 150rpx;
+}

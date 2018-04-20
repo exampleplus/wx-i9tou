@@ -1,0 +1,111 @@
+/*导航栏样式*/
+
+.radio-group {
+  color: #666;
+  border-top: 1rpx solid #f3f3f3;
+  border-bottom: 1rpx solid #f3f3f3;
+  display: flex;
+  background: #fff;
+}
+
+.label_item {
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+}
+
+.checked {
+  color: #f74a3d;
+  border-bottom: 1rpx solid #f74a3d;
+}
+
+.radio {
+  position: absolute;
+  left: -999em;
+}
+
+/*每个模块样式*/
+
+.main {
+  background: #fff;
+  height: 212rpx;
+  margin-bottom: 20rpx;
+}
+
+/*标题样式*/
+
+.finTitle {
+  color: #333;
+  font-size: 32rpx;
+  margin-left: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*图片样式*/
+
+.finImg {
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  width: 250rpx;
+  height: 100rpx;
+  margin-left: 24rpx;
+}
+
+/*融资金额*/
+
+.finAmt {
+  margin-left: 20rpx;
+  margin-top: 80rpx;
+  color: #666;
+  font-size: 28rpx;
+  display: flex;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+/*左侧布局*/
+
+.row {
+  flex-direction: row;
+  display: flex;
+}
+
+.column {
+  margin-top: 20rpx;
+  flex-direction: column;
+  display: flex;
+}
+
+/*左侧字体样式*/
+
+.ri_money {
+  margin-left: 20rpx;
+  margin-bottom: 2rpx;
+  color: #666;
+  font-size: 28rpx;
+  display: flex;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+/*投资明细样式*/
+
+.ri_details {
+  color: #50bfff;
+  font-size: 28rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+/*管家样式*/
+
+.bot_hous {
+  color: #666;
+  font-size: 28rpx;
+  margin-left: 24rpx;
+ 
+}

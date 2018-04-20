@@ -1,0 +1,64 @@
+<view class="support">
+  <view class="support_head">
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="label" wx:for="{{items}}">
+        <view class="radio_view {{item.checked?'ra':''}}">
+          <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+        </view>
+      </label>
+    </radio-group>
+  </view>
+  <view style="height:78rpx;" />
+  <block wx:for="{{pList}}">
+    <view class="support_body">
+      <navigator url="../supportDetails/supportDetails?ppCode={{item.ppCode}}">
+        <view class="support_b">
+          <image class="support_image" src="https://www.ijointoo.com/i9touuat/{{item.uLogo}}" mode="scaleToFill" />
+          <view class="support_fStsStr">{{item.fStsStr}}</view>
+          <view class="support_iScore">{{item.iScore}}</view>
+          <view class="support_u">
+            <view class="support_uName">{{item.uName}}</view>
+            <view class="support_cTime">{{item.cTime}}</view>
+          </view>
+        </view>
+        <view class="support_pName">{{item.pName}}</view>
+
+        <!--
+        <view class="support_p">
+          <view class="support_p_industry">{{item.industry}}</view>
+          <view> | </view>
+          <view class="support_p_industry">{{item.fStage}}</view>
+        </view>
+        -->
+        <view class="support_pDesc">{{item.pDesc}}</view>
+        <view class="supportDetails_pTag">
+          <block wx:for="{{item.pTag}}">
+            <view class="supportDetails_pTag_itme">{{item}}</view>
+          </block>
+        </view>
+        <view class="support_it">
+          <view class="support_it_column">
+            <image class="support_itimage" src="../../images/image/financing.png"></image>
+            <view class="support_it_words">目标:</view>
+            <view class="support_tA">{{item.tAmt}}元</view>
+          </view>
+          <view class="support_line"></view>
+          <view class="support_it_column">
+            <image class="support_itimage" src="../../images/image/number.png"></image>
+            <view class="support_it_words">已筹:</view>
+            <view class="support_tA">{{item.fAmt}}元</view>
+          </view>
+          <view class="support_line"></view>
+          <view class="support_it_column">
+            <image class="support_itimage" src="../../images/image/raised.png"></image>
+            <view class="support_it_words">支持:</view>
+            <view class="support_tA">{{item.goodNum}}万元</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </block>
+  <view class="loadmore" bindtap="loadmore" hidden="true">
+    <text>加载更多</text>
+  </view>
+</view>

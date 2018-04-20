@@ -1,0 +1,36 @@
+<view>
+  <view class="re_prompt">
+    您好，您还不是爱就投会员，请注册获得更多体验！
+  </view>
+  <form>
+    <view class="re_main">
+      <input class="VerCode" bindinput="bindKeyInput" placeholder="请输入中文姓名" placeholder-class="VerCode_in" />
+      <view class="line" />
+      <view class="VerCode">
+        <input class="inp" bindinput="bindKeyInput" placeholder="请输入图片验证" placeholder-class="VerCode_in" />
+        <image src="https://www.ijointoo.com/i9touuat/genVerifyCode.do?time={{time}}"></image>
+      </view>
+      <view class="line" />
+      <view class="VerCode" style="border-bottom: 1rpx solid #fff;">
+        <input class="inp" bindinput="bindKeyInput" placeholder="请输入手机验证码" placeholder-class="VerCode_in" />
+        <view class="Ver">
+          获取验证码
+        </view>
+      </view>
+      <view class="re_prompt">
+        亲，介绍您与爱就投相遇的人，可不能忘记哦！
+      </view>
+      <input style="border-bottom:1rpx solid #fff;" class="VerCode" bindinput="bindKeyInput" placeholder="推荐人手机号(选填)" placeholder-class="VerCode_in" />
+    </view>
+    <button class="button">登录</button>
+    <checkbox-group bindchange="checkboxChange" class="chGroup">
+      <label class="label" wx:for-items="{{items}}">
+        <checkbox class="checkbox" value="{{item.name}}" checked="{{item.checked}}" />
+        <text class="value"> {{item.value}}</text>
+        <text class="te">
+          《爱就投平台权益转让风险提示》
+        </text>
+      </label>
+    </checkbox-group>
+  </form>
+</view>

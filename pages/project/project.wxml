@@ -1,0 +1,78 @@
+<view class="project">
+
+  <!--<view class="project_view_textarea">
+      <textarea class="project_textarea" placeholder="请输入项目关键字" placeholder-class="placeholder_class"  />
+  </view>-->
+  <block wx:for="{{projectlist}}" wx:key="key">
+    <navigator class="navigator" url="../projectDetails/projectDetails?prjCode={{item.prjCode}}" open-type="navigate">
+      <view class="project_stsStr">
+        <text>{{item.stsStr}}</text>
+      </view>
+      <view class="view_image">
+        <image src="http://www.ijointoo.com/i9touuat{{item.finImg}}" mode="scaleToFill" />
+      </view>
+      <view class="project_specs">
+        <text>{{item.finTitle}}</text>
+      </view>
+      <view class="supportDetails_pTag">
+        <block wx:for="{{item.specs}}" wx:key="key">
+          <view class="supportDetails_pTag_itme">{{item}}</view>
+        </block>
+      </view>
+      <view class="project_finPercent">
+        <progress class="project_progress" percent="{{item.finPercent}}" strokeWidth="5" color="#FD7B66" active />
+      </view>
+      <view class="project_data">
+
+        <!--完成时间-->
+        <view class="project_tef">
+          <text>{{item.timeStr}}: </text>
+          <text style="padding-left:10rpx; margin-top:-1rpx;">{{item.time}}</text>
+          
+          <!--融资进度-->
+          <view class="project_t">{{item.finPercent}}%</view>
+        </view>
+        <view class="project_str">
+          <view class="project_finAmt">
+            <text>筹资目标: </text>
+            <view class="te"> {{item.startMoney}}</view>
+          </view>
+          <text>已认筹: </text>
+          <view class="te"> {{item.finAmt}}</view>
+        </view>
+        <view class="project_str">
+          <view class="project_finAmt">
+            <text>估值金额: </text>
+            <view class="te"> {{item.compAss}}</view>
+          </view>
+          <text>起投金额: </text>
+          <view class="te"> {{item.startMoney}}</view>
+        </view>
+        <view class="project_str">
+          <view class="project_finAmt">
+            <text>认筹人数: </text>
+            <view class="te"> {{item.invesetNum}}</view>
+          </view>
+          <text>领投人: </text>
+          <view class="te" style="margin-top:6rpx;"> {{item.leadUserName}}</view>
+        </view>
+      </view>
+      <view class="foot">
+      
+      </view>
+    </navigator>
+  </block>
+
+  <!--
+   <view class="loadmore" bindtap="loadmore">
+    <text>加载更多</text>
+  </view>
+   hidden="{{viewHidden}}" 
+   bindtap="loadmore"
+  -->
+</view>
+<view class="loadmore">
+  <loading hidden="{{viewHidden}}">
+    {{loadTilte}}
+  </loading>
+</view>

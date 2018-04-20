@@ -1,0 +1,79 @@
+.projectReview_page {
+  display: flex;
+  color: #f74a3d;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  background: #fff;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+
+.projectReview_main {
+  background: #fff;
+  margin-bottom: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+
+.projectReview_button {
+  margin-top: 25rpx;
+  position: absolute;
+  right: 15rpx;
+  color: #666;
+  font-size: 20rpx;
+  height: 60rpx;
+  width: 100rpx;
+  line-height: 60rpx;
+}
+
+.projectReview_user {
+  display: flex;
+}
+
+.projectReview_img {
+  margin-top: 25rpx;
+  border-radius: 50%;
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 25rpx;
+}
+
+.projectReview_username {
+  margin-top: 30rpx;
+  margin-left: 15rpx;
+}
+
+.projectReview_name {
+  color: #333;
+  font-size: 24rpx;
+}
+
+.projectReview_date {
+  color: #999;
+  margin-top: 10rpx;
+  font-size: 18rpx;
+}
+
+.projectReview_desc {
+  margin-left: 115rpx;
+  margin-top: 15rpx;
+  padding-bottom: 25rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+/*包裹追评样式*/
+
+.projectReview_replyNum {
+  margin-left: 115rpx;
+  margin-top: 5rpx;
+  background: #f3f3f3;
+  margin-right: 15rpx;
+}
+
+/*追评样式*/
+
+.projectReview_replyNum_data {
+  padding: 15rpx;
+  margin-bottom: 5rpx;
+}

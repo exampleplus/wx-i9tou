@@ -1,0 +1,215 @@
+.support_head {
+  position: fixed;
+  top: -1rpx;
+  z-index: 999;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+.radio-group {
+  background: #fff;
+  display: flex;
+  white-space: nowrap;
+}
+
+.label {
+  padding: 22rpx 0rpx 14rpx 62rpx;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  width: 33%;
+}
+
+.radio {
+  position: absolute;
+  left: -999em;
+}
+
+.radio_view {
+  font-size: 28rpx;
+  display: flex;
+  color: #666;
+  height: 40rpx;
+  padding-right: 15rpx;
+  padding-left: 15rpx;
+  border-right: 1px solid #eee;
+}
+
+.radio_view.ra {
+  color: #f74a3d;
+  display: flex;
+}
+
+.support_body {
+  background: #fff;
+  margin-bottom: 15rpx;
+}
+
+.support_b {
+  display: flex;
+}
+
+.support_image {
+  background-image: url(images/image/huiseniu.png);
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+
+.support_fStsStr {
+  background: #ff99c7;
+  width: 70rpx;
+  padding-top: 20rpx;
+  height: 55rpx;
+  position: absolute;
+  right: 87rpx;
+  font-size: 9rpx;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.support_iScore {
+  background: #77d1fd;
+  width: 70rpx;
+  height: 75rpx;
+  position: absolute;
+  right: 12rpx;
+  font-size: 9rpx;
+  text-align: center;
+  line-height: 75rpx;
+  color: #fff;
+}
+
+.support_u {
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  display: flex;
+}
+
+.support_uName {
+  margin-top: 15rpx;
+  margin-left: 7rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.support_cTime {
+  font-size: 28rpx;
+  margin-left: 18rpx;
+  margin-top: 9rpx;
+  color: #333;
+}
+
+.support_p {
+  display: flex;
+  margin-top: 18rpx;
+  margin-left: 25rpx;
+}
+
+.support_pName {
+  font-size: 36rpx;
+  color: #000;
+  margin-left: 25rpx;
+  padding-top: 15rpx;
+}
+
+.support_p_industry {
+  padding: 0rpx;
+  font-size: 30rpx;
+  height: 20rpx;
+  margin-bottom: 5rpx;
+  color: #333;
+}
+
+.support_pDesc {
+  margin-left: 25rpx;
+  margin-top: 15rpx;
+  color: #333;
+  font-size: 30rpx;
+}
+
+/*底部样式-目标、已筹、支持*/
+
+.support_it {
+  text-align: center;
+  margin-top: 30rpx;
+  display: flex;
+  font-size: 30rpx;
+  color: #c0c0c0;
+  border-top: 1px dotted #eee;
+  height: 60rpx;
+  padding-top: 25rpx;
+}
+
+.support_it_column {
+  display: flex;
+  margin-left: 35rpx;
+  margin-right: 20rpx;
+}
+
+/*底部样式-目标、已筹、支持文字样式*/
+
+.support_it_words {
+  color: #999;
+  font-size: 24rpx;
+  width: 58rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+}
+
+/*底部样式-目标、已筹、支持 金钱样式*/
+
+.support_tA {
+  white-space: nowrap;
+  color: #f74a3d;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  height: 50rpx;
+  width: 100rpx;
+}
+
+/*底部样式-目标、已筹、支持 图标样式*/
+
+.support_itimage {
+  margin-top: 8rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*竖线*/
+
+.support_line {
+  margin-top: 5rpx;
+  background: #eee;
+  width: 1rpx;
+  height: 40rpx;
+}
+
+.supportDetails_pTag {
+  text-align: center;
+  flex-flow: row wrap;
+  font-size: 24rpx;
+  color: #f74a3d;
+  margin-top: 15rpx;
+  padding-bottom: 15rpx;
+}
+
+.supportDetails_pTag_itme {
+  display: inline-block;
+  padding: 10rpx;
+  border: 3rpx solid #f74a3d;
+  border-radius: 20rpx;
+  margin-right: 15rpx;
+  height: 20rpx;
+  line-height: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.loadmore {
+  text-align: center;
+  font-size: 40rpx;
+  margin-top: 35rpx;
+  margin-bottom: 30rpx;
+}

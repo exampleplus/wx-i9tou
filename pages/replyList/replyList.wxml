@@ -1,0 +1,33 @@
+<view class="projectReview_main">
+  <view class="projectReview_user">
+
+    <!--用户头像-->
+    <image class="projectReview_img" src="https://www.ijointoo.com/i9touuat/{{logo}}"></image>
+    <view class="projectReview_username">
+
+      <!--用户名-->
+      <view class="projectReview_name">{{name}}</view>
+
+      <!--时间-->
+      <view class="projectReview_date">{{date}}</view>
+    </view>
+  </view>
+
+  <!--评论内容-->
+  <view class="projectReview_desc">{{desc}}</view>
+  <view class="projectReview_replyNum">
+    <block wx:for="{{rList}}">
+      <view class="projectReview_replyNum_data">
+
+        <!--追评名字-->
+        <text style=" color: #f74a3d;font-size: 24rpx; ">{{item.name}}</text>
+
+        <!--追评内容-->
+        <text style="color: #333; font-size:24rpx;margin-left: 10rpx; ">{{item.desc}}</text>
+
+        <!--追评时间-->
+        <text style="color: #999; font-size: 18rpx;margin-left: 10rpx; ">{{item.date}}</text>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<view class="login">
+  <view class="login_ajt">
+    您已经成为爱就投会员，请使用手机验证码或密码登入
+  </view>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="label" wx:for="{{items}}">
+      <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" />
+      <view class="value {{item.checked?'ra':''}}">
+        {{item.value}}
+      </view>
+    </label>
+  </radio-group>
+  <form hidden="{{!items[0].checked}}" bindsubmit="verCodeSubmit">
+    <view class="VerCode">
+      <input class="inp" type="number" maxlength="4" placeholder="请输入图片验证" placeholder-class="VerCode_in" bindblur="bindblurImageCode" />
+
+      <!--"-->
+      <image src="{{url}}?time={{time}}" bindtap="imageCode"></image>
+    </view>
+    <view class=" VerCode">
+      <input class=" inp " type="number" placeholder="请输入手机验证码" placeholder-class="VerCode_in" name="verCode" />
+      <view class="Ver " bindtap="catchtapImageCode">
+        {{codeNum}}
+      </view>
+    </view>
+    <button class="button" formType="submit">登录</button>
+  </form>
+  <form hidden="{{!items[1].checked}}" bindsubmit="passwordSubmit">
+    <view class="VerCode">
+      <input class="inp " type="number" placeholder="请输入密码 " placeholder-class="VerCode_in" name="password" />
+    </view>
+    <button class="button " formType="submit">登录</button>
+  </form>
+</view>

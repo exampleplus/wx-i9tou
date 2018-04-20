@@ -1,0 +1,13 @@
+<template name="topSearch">
+
+  <!--顶部搜索栏-->
+  <view class="search">
+
+    <!--放大镜图标-->
+    <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="搜索项目关键字" placeholder-class="placeholder" bindfocus="onBindFocus" value="{{inputValue}}" bindconfirm="onBindConfirm" bindblur="bindblur" bindinput="bindinput" />
+
+    <!--x图片-->
+    <image wx:if="{{searchPanelShow}}" src="/images/log/wx_app_xx.png" class="xx-img" catchtap="onCancelImgTap"></image>
+  </view>
+</template>

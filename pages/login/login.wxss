@@ -1,0 +1,72 @@
+.login_ajt {
+  height: 88rpx;
+  color: #bbb;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.VerCode {
+  height: 110rpx;
+  margin-left: 44rpx;
+  margin-right: 24rpx;
+  display: flex;
+  border-bottom: 1rpx solid #bbb;
+  font-size: 30rpx;
+}
+
+.radio-group {
+  margin-left: 40rpx;
+  margin-right: 12rpx;
+  color: #f74a3d;
+  display: flex;
+}
+
+.radio {
+  position: absolute;
+  left: -999em;
+}
+
+.value {
+  height: 80rpx;
+  width: 344rpx;
+  border: 1rpx solid #f74a3d;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.ra {
+  color: #fff;
+  background: #f74a3d;
+}
+
+.inp {
+  width: 75%;
+  line-height: 110rpx;
+  height: 110rpx;
+}
+
+.VerCode image {
+  width: 120rpx;
+  height: 50rpx;
+  margin-top: 27rpx;
+  margin-left: 20rpx;
+}
+
+.VerCode_in {
+  color: #bbb;
+  font-size: 30rpx;
+}
+
+.Ver {
+  color: #f74a3d;
+  margin-top: 50rpx;
+}
+
+.button {
+  background: #f74a3d;
+  margin-left: 40rpx;
+  margin-right: 12rpx;
+  margin-top: 60rpx;
+  color: #fff;
+  font-size: 36rpx;
+}

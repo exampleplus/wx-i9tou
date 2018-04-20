@@ -1,0 +1,8 @@
+<view>
+  <view>
+    <image src="src"></image>
+  </view>
+  <view>
+  投资了{{}}
+  </view>
+</view>

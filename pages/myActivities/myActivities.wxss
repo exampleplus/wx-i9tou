@@ -1,0 +1,96 @@
+/*导航栏样式*/
+
+.radio-group {
+  color: #666;
+  border-top: 10rpx solid #f3f3f3;
+  border-bottom: 1rpx solid #f3f3f3;
+  display: flex;
+  background: #fff;
+}
+
+.label_item {
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+}
+
+.checked {
+  color: #f74a3d;
+  border-bottom: 1rpx solid #f74a3d;
+}
+
+.radio {
+  position: absolute;
+  left: -999em;
+}
+
+/*上部布局*/
+
+.t_layout {
+  background: #fff;
+  height: 212rpx;
+  margin-bottom: 20rpx;
+}
+
+/*标题样式*/
+
+.actName {
+  color: #333;
+  font-size: 32rpx;
+  margin-left: 24rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*图片样式*/
+
+.finImg {
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  width: 250rpx;
+  height: 100rpx;
+  margin-left: 24rpx;
+}
+
+/*右部布局*/
+
+.r_layout {
+  display: flex;
+}
+
+/*支持样式*/
+
+.support {
+  margin-left: 20rpx;
+  margin-top: 80rpx;
+  color: #666;
+  font-size: 28rpx;
+  display: flex;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+/*支付样式*/
+
+.pay {
+  margin-top: 68rpx;
+  position: absolute;
+  right: 20rpx;
+  color: #666;
+  font-size: 28rpx;
+  width: 110rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 10rpx;
+  border-radius: 8rpx;
+  text-align: right;
+}
+
+.pay.now_pay {
+  color: #fff;
+  font-size: 28rpx;
+  background: #f74a3d;
+}

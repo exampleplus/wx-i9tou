@@ -1,0 +1,23 @@
+<view class="login">
+  <view class="login_im">
+    <image src="../../images/image/login_image.png"></image>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view>
+      <input class="login_text" type="number" placeholder="请输入手机号" maxlength="11" placeholder-class="login_te" name="login_num" />
+    </view>
+    <view class="prompt">
+      若手机未注册将自动创建爱就投账户
+    </view>
+    <button class="login_button" formType="submit">下一步</button>
+    <checkbox-group bindchange="checkboxChange" class="chGroup">
+      <label class="label" wx:for-items="{{items}}">
+        <checkbox class="checkbox" value="{{item.name}}" checked="{{item.checked}}" />
+        <text class="value"> {{item.value}}</text>
+        <text class="te">
+          《爱就投平台权益转让风险提示》
+        </text>
+      </label>
+    </checkbox-group>
+  </form>
+</view>

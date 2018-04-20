@@ -1,0 +1,27 @@
+
+<!--我关注的项目-->
+<view class="line"></view>
+<view>
+  <block wx:for="{{prjList}}">
+    <view class="main">
+
+      <!--项目主题-->
+      <view class="finTitle">
+        {{item.finTitle}}
+      </view>
+      <view style=" display: flex;">
+        <image class="finImg" image src="https://www.ijointoo.com/i9touuat{{item.finImg}}"></image>
+
+        <!--预期回报率-->
+        <view class="finAmt">
+          预期回报率:
+          <text style="color: #f74a3d;"> {{item.returnValue}}</text>
+        </view>
+
+      </view>
+      <view class="foot">
+      
+      </view>
+    </view>
+  </block>
+</view>

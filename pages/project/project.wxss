@@ -1,0 +1,154 @@
+.project {
+  padding: 10rpx;
+  display: block;
+}
+
+.project_view_textarea {
+  padding-top: 15rpx;
+  width: 100%;
+  height: 60rpx;
+  background: #fff;
+}
+
+.project_textarea {
+  width: 80%;
+  height: 50rpx;
+  border: 1rpx solid #ccc;
+}
+
+.placeholder_class {
+}
+
+.navigator {
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+/*项目进度右上角小图标样式*/
+
+.project_stsStr {
+  font-size: 20rpx;
+  position: absolute;
+  background: #bbb;
+  color: #fff;
+  right: 29rpx;
+  text-align: center;
+  width: 44rpx;
+  padding-top: 19rpx;
+  padding-left: 13rpx;
+  margin: 0 auto;
+  padding-right: 13rpx;
+  margin-top: 10rpx;
+  height: 50rpx;
+}
+
+/*包裹图片view样式*/
+
+.view_image {
+  text-align: center;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 15rpx;
+}
+
+.view_image image {
+  width: 100%;
+}
+
+.project_specs {
+  text-align: center;
+  font-size: 32rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/*标签样式*/
+
+.supportDetails_pTag {
+  text-align: center;
+  flex-flow: row wrap;
+  font-size: 24rpx;
+  color: #f74a3d;
+  margin-top: 30rpx;
+  padding-bottom: 15rpx;
+}
+
+.supportDetails_pTag_itme {
+  display: inline-block;
+  padding: 10rpx;
+  border: 3rpx solid #f74a3d;
+  border-radius: 20rpx;
+  margin-right: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.project_finPercent {
+  height: 90%;
+  border-radius: 80px;
+}
+
+/*完成时间*/
+
+.project_data {
+  display: block;
+  margin-top: 20rpx;
+}
+
+.project_t {
+  position: absolute;
+  right: 45rpx;
+}
+
+/*中部样式*/
+
+.project_str {
+  display: flex;
+  margin-top: 10rpx;
+  padding-left: 35rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+
+.project_finAmt {
+  display: flex;
+  width: 350rpx;
+}
+
+.loadmore {
+  text-align: center;
+  font-size: 25rpx;
+  margin-top: 35rpx;
+  margin-bottom: 30rpx;
+}
+
+.project_progress {
+  margin-top: 15rpx;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 80rpx 80rpx 80rpx 80rpx;
+}
+
+.te {
+  text-align: center;
+  color: #666;
+  margin-left: 5rpx;
+  font-size: 24rpx;
+}
+
+.project_tef {
+  padding-left: 35rpx;
+  display: flex;
+  font-size: 20rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+
+/*底部样式*/
+
+.foot {
+  height: 20rpx;
+}
